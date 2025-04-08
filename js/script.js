@@ -1,33 +1,25 @@
 console.log("File begin");
 
-// Global variables
-let name = "John";
-let age = 25;
-let city = "New York";
+let my_name;
+let year;
+const current_year = 2025;
 
-// Fill in the blanks function
-function fillInTheBlanks() {
-    return `Hello, my name is ${name}. I am ${age} years old and I live in ${city}.`;
+function fill_in_the_blanks() {
+    my_name = "Vincent";
+    year = 2005;
+    document.getElementById("name").innerHTML = my_name;
+    document.getElementById("year").innerHTML = year;
 }
 
-// How old are you function
-function howOldAreYou(birthYear) {
-    const currentYear = new Date().getFullYear();
-    return `You are ${currentYear - birthYear} years old.`;
+function how_old_are_you() {
+    alert(current_year - year);
 }
 
-// Change globals function to Toddify things
-function toddifyGlobals() {
-    name = "Todd";
-    age = 30;
-    city = "Toddville";
-    console.log("Globals have been Toddified!");
+function change_globals() {
+    my_name = "Todd";
+    year = 1990;
+    document.getElementById("name").innerHTML = my_name;
+    document.getElementById("year").innerHTML = year;
 }
-
-// Example usage
-console.log(fillInTheBlanks());
-console.log(howOldAreYou(1995));
-toddifyGlobals();
-console.log(fillInTheBlanks());
 
 console.log("File end");

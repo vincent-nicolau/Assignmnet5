@@ -1,12 +1,11 @@
 div {
     width: 50%;
-    margin: 50px auto; /* Centers the divs horizontally and adds top margin */
-    padding: 20px; /* Adds padding inside the divs */
-    background-color: #f0f0f0; /* Adds a light background color */
-    border: 1px solid #ccc; /* Adds a border */
-    box-sizing: border-box; /* Ensures padding is included in width/height */
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 button {
-    margin: 0 10px; /* Adds spacing of 20px between buttons (10px on each side) */
+    margin: 0 10px;
 }
